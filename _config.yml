@@ -1,56 +1,38 @@
+--- 
+defaults: 
+  - 
+    scope: 
+      path: ""
+      type: posts
+    values: 
+      layout: post
 layout: sidebar
-style: light
-
-plugins:
+permalink: "/:year/:month/:day/:title/"
+plugins: 
   - jekyll-octicons
   - jekyll-github-metadata
   - jemoji
-
-permalink: /:year/:month/:day/:title/
-
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: "posts"
-    values:
-      layout: "post"
-
-projects:
-  sort_by: pushed
-  # sort_by options:
-  #   - pushed
-  #   - stars
-  limit: 9
-  exclude:
+projects: 
+  exclude: 
     forks: true
-    projects:
-    # - repo-name
-
- social_media:
-  # behance: your_username
-  # dribbble: your_username
+    projects: ~
+  limit: 9
+  sort_by: pushed
+social_media: 
   facebook: osismpksmaniwa
-  # hackerrank: your_username
   instagram: osismpksmaniwa
-  # keybase: your_username
-  # linkedin: your_username
-  # medium: your_username
-  # stackoverflow: your_user_id
-  # telegram: your_username
   twitter: omsmaniwa
-  # unsplash: your_username
-  # vk: your_username
-  website: http://web.osismpksmaniwa.web.id
+  website: "http://web.osismpksmaniwa.web.id"
   youtube: osismpksmanegeri1wonoayu
-
-topics:
-  - name: CSS
-    web_url: https://github.com/topics/css
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png
-
-  - name: Web design
-
-  - name: Sass
-    web_url: https://github.com/topics/sass
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png
+style: light
+topics: 
+  - 
+    image_url: "https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png"
+    name: CSS
+    web_url: "https://github.com/topics/css"
+  - 
+    name: "Web design"
+  - 
+    image_url: "https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png"
+    name: Sass
+    web_url: "https://github.com/topics/sass"
